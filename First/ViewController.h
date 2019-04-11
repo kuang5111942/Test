@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+int i = 10;
+
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableString *strA;
+@property (strong, nonatomic) NSMutableString *strB;
+
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+- (IBAction)myButton:(UIButton *)sender;
 
 @end
 
